@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Nunito&display=swap");
+
+* {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: inherit;
+  color: burlywood;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img,
+svg,
+video {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+body {
+  min-height: 100dvh;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+p {
+  text-wrap: pretty;
+}
+header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../img/cup-of-coffee-1280537_1280.jpg");
+  background-size: cover;
+  background-position: 50% 30%;
+}
+nav {
+  width: 100%;
+  height: 100px;
+  background: #000000a4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo span {
+  color: grey;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 3px 3px 3px #898941;
+  -webkit-text-stroke: 2px #e7af6e;
+  transition: 0.5s;
+}
+.logo span:hover {
+  text-shadow: 0 0 20px rgb(245, 245, 237);
+}
+.social-links i {
+  margin: 0 10px;
+  font-size: 1.3rem;
+}
