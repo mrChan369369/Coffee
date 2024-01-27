@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+h1{
+    font-size: 3rem;
+    color: rgb(240, 145, 22);
+}
+
+@media (max-width:998px) {
+    h1{
+        background-color: #dd1c1c;
+        font-size: 2rem;
+    }
+    body{
+        background-color: #cc7474;
+    }
+}
+
+
+@media (max-width:768px) {
+    h1{
+        background-color: #33811b;
+        font-size: 1rem;
+    }
+    body{
+        background-color: #352020;
+    }
+}
+
+@media (max-width:576px) {
+    h1{
+        background-color: #1639d6;
+        font-size: 0.8rem;
+    }
+    body{
+        background-color: #cfa7a7;
+    }
+}

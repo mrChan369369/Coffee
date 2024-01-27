@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0 ;
+}
+h1{
+  font-size: 0.6rem;  
+}
+body{
+    background-color: #bd5d5d;
+}
+@media (min-width:576px) {
+    h1{
+        font-size: 1rem;
+    }
+    body{
+        background-color: #81cc07;
+    }
+}
+@media (min-width:768px) {
+    h1{
+        font-size: 1.3rem;
+    }
+    body{
+        background-color: #2fd6ba;
+    }
+}
+@media (min-width:1002px) {
+    h1{
+        font-size: 2rem;
+    }
+    body{
+        background-color: #81cc07;
+    }
+}
+
+

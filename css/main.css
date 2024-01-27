@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Nunito&display=swap");
 
 * {
@@ -69,4 +70,63 @@ nav {
 .social-links i {
   margin: 0 10px;
   font-size: 1.3rem;
+}
+.nav-links a{
+  background-color: #252521;
+  padding: 10px 15px;
+  margin: 0 10px;
+  box-shadow: 0 0 5px #aaca1a;
+  color: #bba97b;
+  border-radius: 10px;
+}
+.nav-links a:hover {
+  box-shadow: 0 0 5px 2px greenyellow ;
+}
+
+#bar{
+  background-color: #cc48480a;
+  color: #b3f027;
+  font-size: 2rem;
+  padding: 3px 5px;
+  cursor: pointer;
+  display: none;
+}
+
+
+@media(max-width:1030px){
+  .social-links{
+    /* display: none; */
+  }
+  .nav-links{
+    position: absolute;
+    padding: 100px 100px;
+    top: 100px ;
+    left: 0;
+    right: 0;
+  }
+  .nav-links a{
+    display: block;            
+    padding: 13px 10px;
+    margin: 10px 10px;
+  }
+}
+@media (max-width:500px){
+  .social-links i{
+    display: none;
+  }
+  #bar{
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+  }
+  .nav-links a{
+    display: block;
+    display: none;
+  }
+  .logo{
+    position: relative;
+    left: 80px;
+  }
+
 }
