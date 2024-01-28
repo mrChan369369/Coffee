@@ -9,6 +9,7 @@
   text-decoration: none;
   font-size: inherit;
   color: burlywood;
+  scroll-behavior: smooth;
 }
 *,
 *::before,
@@ -91,8 +92,87 @@ nav {
   cursor: pointer;
   display: none;
 }
+/* banner start*/
+.banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #fff; */
+  min-height: calc(100vh - 100px);
+}
+.banner-card{
+  padding: 30px;
+  text-align: center;
+  /* background-color: #fff; */
+  backdrop-filter: blur(6px);
+}
+.banner h3 {
+  font-size: 2rem;
+  padding: 10px;
+  color: rgb(169 200 77 / 83%);
 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+}
+.banner h1 {
+  font-size: 4rem;
+  padding: 10px;
+  color: rgb(169 200 77 / 83%);
+  font-family :monospace;
+
+}
+.banner p {
+  font-size: 1.2rem;
+  padding: 10px;
+  color: rgba(184, 209, 109, 0.83);
+  font-family :monospace
+  
+}
+.banner button {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 20px;
+  margin :20px;
+  color: rgb(12, 12, 12);
+  background-color: rgb(213, 235, 14);
+  font-family :monospace
+
+}
+.bunner button:hover {
+  box-shadow: 0 0 5px 10px rgb(250, 81, 2) ;
+}
+
+section{
+  width: 100%;
+  min-height: 100vh;
+  border-bottom: 1px solid grey;
+  padding: 30px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center ;
+}
+.section-title{
+  text-align: center;
+  font-size: 3rem;
+  border-bottom: 2px solid red;
+  width: fit-content;
+  margin: auto;
+}
+#Home{
+  background-image: url(../img/cappuccino-756490_640.jpg);
+}
+#About{
+  background-image: url(../img/coffee-3120750_640.jpg);
+}
+#Service{
+  background-image: url(../img/coffee-2608864_640.jpg);
+}
+#Contact{
+  background-image: url(../img/coffee-2306471_640.jpg);
+}
+#Product{
+  background-image: url(../img/coffee-171653_640.jpg);
+}
 @media(max-width:1030px){
   .social-links{
     /* display: none; */
@@ -111,6 +191,10 @@ nav {
   }
 }
 @media (max-width:500px){
+  boby{
+    position: relative;
+    /* overflow-x: hidden; */
+  }
   .social-links i{
     display: none;
   }
@@ -120,13 +204,39 @@ nav {
     right: 0;
     margin-right: 20px;
   }
-  .nav-links a{
-    display: block;
-    display: none;
+  .nav-links {
+    /* display: none; */
+    transform: translateX(-100%);
+    transition: 1s;
+    opacity: 0;
+    z-index: 1;
+  
+  }
+  .show{
+    /* display: block; */
+    transform: translate(0%);
+    opacity: 1;
+
   }
   .logo{
-    position: relative;
-    left: 80px;
+    /* position: relative; */
+    /* left: 50px; */
   }
+  .banner p{
+    font-size: 1rem;
+    padding: 10px;
+    color: rgba(184, 209, 109, 0.83);
+  }
+  .banner h1 {
+    font-size:2rem;
+    padding: 10px;
+    color: rgb(169 200 77 / 83%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .banner-card{
+   /* backdrop-filter: blur(6px); */
+    
+  }
+  
 
 }
