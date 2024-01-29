@@ -1,5 +1,5 @@
 
-@import url("https://fonts.googleapis.com/css2?family=Lora&family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Nunito&display");
 
 * {
   min-width: 0;
@@ -9,7 +9,7 @@
   text-decoration: none;
   font-size: inherit;
   color: burlywood;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth;    
 }
 *,
 *::before,
@@ -23,9 +23,11 @@ video {
   height: auto;
   max-width: 100%;
 }
+
 body {
   min-height: 100dvh;
 }
+
 h1,
 h2,
 h3,
@@ -34,9 +36,11 @@ h5,
 h6 {
   text-wrap: balance;
 }
+
 p {
   text-wrap: pretty;
 }
+
 header {
   width: 100%;
   min-height: 100vh;
@@ -59,8 +63,8 @@ nav {
 }
 .logo span {
   color: grey;
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 3rem;
+  font-weight: bolder;
   text-shadow: 3px 3px 3px #898941;
   -webkit-text-stroke: 2px #e7af6e;
   transition: 0.5s;
@@ -92,27 +96,29 @@ nav {
   cursor: pointer;
   display: none;
 }
+
 /* banner start*/
 .banner{
   display: flex;
   justify-content: center;
+  /* background-color: #be4141; */
   align-items: center;
-  /* background-color: #fff; */
   min-height: calc(100vh - 100px);
 }
 .banner-card{
-  padding: 30px;
-  text-align: center;
   /* background-color: #fff; */
-  backdrop-filter: blur(6px);
+  user-select: none;
+  text-align: center;
+  padding: 30px;
+  backdrop-filter: blur(4px);
 }
 .banner h3 {
   font-size: 2rem;
   padding: 10px;
   color: rgb(169 200 77 / 83%);
-
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+  font-family: monospace;
+  word-spacing: 0.1in;
+  letter-spacing: 0.2in;
 }
 .banner h1 {
   font-size: 4rem;
@@ -136,7 +142,7 @@ nav {
   color: rgb(12, 12, 12);
   background-color: rgb(213, 235, 14);
   font-family :monospace
-
+  
 }
 .bunner button:hover {
   box-shadow: 0 0 5px 10px rgb(250, 81, 2) ;
@@ -173,23 +179,28 @@ section{
 #Product{
   background-image: url(../img/coffee-171653_640.jpg);
 }
-@media(max-width:1030px){
+
+@media(max-width:1035px){
   .social-links{
     /* display: none; */
   }
   .nav-links{
     position: absolute;
-    padding: 100px 100px;
+    padding: 100px 50px;
     top: 100px ;
     left: 0;
     right: 0;
+    opacity: 0;
   }
   .nav-links a{
     display: block;            
-    padding: 13px 10px;
-    margin: 10px 10px;
+    padding: 15px 20px;
+    margin: 15px 0px;
+    text-align: center;
   }
+ 
 }
+
 @media (max-width:500px){
   boby{
     position: relative;
@@ -210,7 +221,7 @@ section{
     transition: 1s;
     opacity: 0;
     z-index: 1;
-  
+    
   }
   .show{
     /* display: block; */
@@ -218,12 +229,15 @@ section{
     opacity: 1;
 
   }
+  .hide{
+    display: none;
+  }
   .logo{
     /* position: relative; */
     /* left: 50px; */
   }
   .banner p{
-    font-size: 1rem;
+    font-size: 0.7rem;
     padding: 10px;
     color: rgba(184, 209, 109, 0.83);
   }
@@ -237,6 +251,12 @@ section{
    /* backdrop-filter: blur(6px); */
     
   }
+  .banner h3{
+    word-spacing: 0.1in;
+    letter-spacing: 0.1in;
+
+  }
+
   
 
 }
