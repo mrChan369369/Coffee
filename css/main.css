@@ -134,7 +134,7 @@ nav {
   font-family :monospace
   
 }
-.banner button {
+.btn{
   font-size: 1rem;
   padding: 10px;
   border-radius: 20px;
@@ -179,6 +179,122 @@ section{
 #Product{
   background-image: url(../img/coffee-171653_640.jpg);
 }
+
+.about-row{
+  display: flex;
+  margin-top: 50px;
+}
+.about-img,.about-text{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-text *{
+  color: black;
+}
+.about-text {
+  font-size: 1.5rem;
+  
+}
+.about-text p{
+  line-height: normal;
+  font-style: italic;
+  background: rgba(226, 222, 222, 0.562);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+.about-text h1{
+  font-size: 5rem;
+  border-bottom: 10px double rgb(37, 226, 12);
+  width: fit-content;
+  color: #b3f027;
+  margin-bottom: 10px;
+}
+.textGroup a{
+  margin: 20px auto;
+  padding: 20px;
+
+}
+/* product */
+.product-row{
+  display: flex;
+}
+.product-img,.product-text{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-text *{
+  color: black;
+}
+.product-text{
+  padding: 20px 20px;
+}
+.product-text h1{
+  font-size: 2rem;
+  padding:20px;
+
+}
+.product-text p{
+  font-size: large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  line-height: normal;
+  padding: 20px 40px;
+  margin: 20px 10px ;
+  background-color: #e7cccc81;
+  border-radius: 20px;
+}
+.product-text a{
+  padding: 10px;
+}
+/* memu row */
+.menu-row{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 20px 10px ;
+}
+.menu-card {
+  flex: 1;
+  flex-basis: 200px;
+  height: 175px;
+}
+.menu-card img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.menu-card h5{
+  text-align: center;
+  text-transform: capitalize;
+  font-style: italic;
+  padding: 10px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////
 
 @media(max-width:1080px){
   .social-links{
@@ -292,7 +408,27 @@ section{
     letter-spacing: 0.1in;
 
   }
-
+  .about-row{
+    flex-direction: column;
+  }
+  .about-text{
+    font-size: 1rem;
+    text-align: center;
+  }
+  .product-row{
+    flex-direction: column;
+  }
+  .product-text{
+    text-align: center;
+  }
+  .menu-card {
+    flex: 1;
+    flex-basis: 150px;
+    height: 180px;
+  }
+  .menu-card h5{
+    font-size: 10px;
+  }
   
 
 }
