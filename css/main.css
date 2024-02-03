@@ -180,13 +180,14 @@ section{
   background-image: url(../img/coffee-171653_640.jpg);
 }
 
-@media(max-width:1035px){
+@media(max-width:1080px){
   .social-links{
     /* display: none; */
+    margin-right: 20px;
   }
   .nav-links{
     position: absolute;
-    padding: 100px 50px;
+    padding: 100px 150px;
     top: 100px ;
     left: 0;
     right: 0;
@@ -194,9 +195,31 @@ section{
   }
   .nav-links a{
     display: block;            
-    padding: 15px 20px;
-    margin: 15px 0px;
+    padding: 15px 50px;
+    margin: 20px 0px;
     text-align: center;
+    
+  }
+  .show{
+    /* display: block; */
+    transform: translate(0%);
+    opacity: 1;
+
+  }
+  #bar{
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+  }
+  .hide{
+    display: none;
+  }
+  .banner h3{
+    font-size: 3.5rem;
+    padding: 10px;
+    color: rgb(184, 209, 109);
+
   }
  
 }
@@ -221,6 +244,19 @@ section{
     transition: 1s;
     opacity: 0;
     z-index: 1;
+    position: absolute;
+    padding: 15px 40px;
+    top: 200px ;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    
+  }
+  .nav-links a{
+    display: block;            
+    padding: 15px 30px;
+    margin: 20px 0px;
+    text-align: center;
     
   }
   .show{
